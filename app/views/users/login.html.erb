@@ -1,0 +1,100 @@
+<!-- Content
+======================================= -->
+
+<div class="page_title2">
+  <div class="container">
+
+    <div class="title"><h1>Đăng nhập</h1></div>
+
+    <div class="pagenation">&nbsp;<%= link_to "Trang chủ", root_path %> <i>/</i> Đăng nhập</div>
+
+  </div>
+</div><!-- end page title -->
+
+
+<div class="clearfix"></div>
+
+<div class="container">
+
+  <div class="content_fullwidth">
+
+
+    <div class="login_form">
+      <form id="sky-form" class="sky-form">
+        <header>Đăng nhập</header>
+
+        <fieldset>
+          <section>
+            <div class="row">
+              <label class="label col col-4">E-mail</label>
+              <div class="col col-8">
+                <label class="input">
+                  <i class="icon-append icon-user"></i>
+                  <input type="email" name="email">
+                </label>
+              </div>
+            </div>
+          </section>
+
+          <section>
+            <div class="row">
+              <label class="label col col-4">Mật khẩu</label>
+              <div class="col col-8">
+                <label class="input">
+                  <i class="icon-append icon-lock"></i>
+                  <input type="password" name="password">
+                </label>
+                <div class="note"><a href="#sky-form2" class="modal-opener">Quên mật khẩu?</a></div>
+              </div>
+            </div>
+          </section>
+
+          <section>
+            <div class="row">
+              <div class="col col-4"></div>
+              <div class="col col-8">
+                <label class="checkbox"><input type="checkbox" name="remember" checked><i></i>Ghi nhớ</label>
+              </div>
+            </div>
+          </section>
+        </fieldset>
+        <footer>
+          <div class="fright">
+            <%= link_to "Đăng ký", users_register_path, :class => 'button button-secondary' %>
+            <button type="submit" class="button">Đăng nhập</button>
+          </div>
+
+        </footer>
+      </form>
+    </div>
+
+    <form action="#" id="sky-form2" class="sky-form sky-form-modal">
+      <header>Lấy lại mật khẩu</header>
+
+      <fieldset>
+        <section>
+          <label class="label">E-mail</label>
+          <label class="input">
+            <i class="icon-append icon-user"></i>
+            <input type="email" name="email" id="email">
+          </label>
+        </section>
+      </fieldset>
+
+      <footer>
+        <button type="submit" name="submit" class="button">Gửi</button>
+        <a href="#" class="button button-secondary modal-closer">Đóng</a>
+      </footer>
+
+      <div class="message">
+        <i class="icon-ok"></i>
+        <p>Yêu cầu của bạn đã gửi thành công!<br><a href="#" class="modal-closer">Đóng cửa sổ</a></p>
+      </div>
+    </form>
+
+  </div>
+
+</div><!-- end content area -->
+
+
+<div class="clearfix margin_top7"></div>

@@ -10,10 +10,26 @@
  * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
  * file per style scope.
  *
- *= require_tree .
- *= require_self
- *= require bootstrap.min
- *= require font-awesome.min
- *= require bootstrap-theme.min
+ *= require reset
  *= require style
+ *= require font-awesome/font-awesome.min
+ *= require responsive-layouts
+ *= require colors/blue
+ *= require mainmenu/sticky
+ *= require mainmenu/bootstrap
+ *= require mainmenu/fhmm
+ *= require revolutionslider/settings
+ *= require revolutionslider/slider_main
+ *= require cubeportfolio/cubeportfolio.min
+ *= require tabs/responsive-tabs3
+ *= require tabs/responsive-tabs2
+ *= require tabs/responsive-tabs
+ *= require tabs/tabwidget
+ *= require carousel/flexslider
+ *= require carousel/skin
+ *= require progressbar/ui.progress-bar
+ *= require form/sky-forms
+ *= require accordion/accordion
+ *= require lightbox/jquery.fancybox
+ *= require style_special
  */

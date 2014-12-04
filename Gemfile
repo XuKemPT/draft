@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '4.1.6'
+gem 'rails', '4.1.8'
 # Use Mysql
 gem 'mysql2'
 # Use SCSS for stylesheets
@@ -43,3 +43,6 @@ gem 'activeadmin', github: 'activeadmin'
 # Use debugger
 # gem 'debugger', group: [:development, :test]
 
+gem 'carrierwave'
+gem 'mini_magick'
+gem 'tzinfo-data', platforms: [:mingw, :mswin]

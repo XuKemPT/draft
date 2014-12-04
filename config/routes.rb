@@ -3,10 +3,21 @@ Rails.application.routes.draw do
 
   get 'home/index'
   get 'home/sample'
+  get 'home/about'
+  get 'home/contact'
+  get 'home/mission'
+  get 'home/news'
+  get 'home/news_post'
+  get 'home/astroTg'
+  get 'home/question'
+  get 'home/discovery'
+  get 'home/knowledge'
+  get 'home/gallery'
+  get 'users/login'
+  get 'users/register'
 
   devise_for :admin_users, ActiveAdmin::Devise.config
   ActiveAdmin.routes(self)
-  devise_for :users
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

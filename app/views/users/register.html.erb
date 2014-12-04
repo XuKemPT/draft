@@ -1,0 +1,102 @@
+<!-- Content
+======================================= -->
+
+<div class="page_title2">
+  <div class="container">
+
+    <div class="title"><h1>Đăng ký</h1></div>
+
+    <div class="pagenation">&nbsp;<%= link_to "Trang chủ", root_path %> <i>/</i> Đăng ký</div>
+
+  </div>
+</div><!-- end page title -->
+
+
+<div class="clearfix"></div>
+
+<div class="container">
+
+  <div class="content_fullwidth">
+
+
+    <div class="reg_form">
+      <form id="sky-form" class="sky-form">
+        <header>Đăng ký</header>
+
+        <fieldset>
+          <section>
+            <label class="input">
+              <i class="icon-append icon-user"></i>
+              <input type="text" name="username" placeholder="Tên tài khoản">
+              <b class="tooltip tooltip-bottom-right">Nhập tên tài khoản</b>
+            </label>
+          </section>
+
+          <section>
+            <label class="input">
+              <i class="icon-append icon-envelope-alt"></i>
+              <input type="email" name="email" placeholder="Địa chỉ email">
+              <b class="tooltip tooltip-bottom-right">Nhập địa chỉ email</b>
+            </label>
+          </section>
+
+          <section>
+            <label class="input">
+              <i class="icon-append icon-lock"></i>
+              <input type="password" name="password" placeholder="Mật khẩu" id="password">
+              <b class="tooltip tooltip-bottom-right">Nhập mật khẩu</b>
+            </label>
+          </section>
+
+          <section>
+            <label class="input">
+              <i class="icon-append icon-lock"></i>
+              <input type="password" name="Gõ lại mật khẩu" placeholder="Confirm password">
+              <b class="tooltip tooltip-bottom-right">Gõ lại mật khẩu</b>
+            </label>
+          </section>
+        </fieldset>
+
+        <fieldset>
+          <div class="row">
+            <section class="col col-6">
+              <label class="input">
+                <input type="text" name="lastname" placeholder="Họ">
+              </label>
+            </section>
+            <section class="col col-6">
+              <label class="input">
+                <input type="text" name="firstname" placeholder="Tên">
+              </label>
+            </section>
+          </div>
+
+          <section>
+            <label class="select">
+              <select name="gender">
+                <option value="0" selected disabled>Giới tính</option>
+                <option value="1">Nam</option>
+                <option value="2">Nữ</option>
+                <option value="3">Khác</option>
+              </select>
+              <i></i>
+            </label>
+          </section>
+
+          <section>
+            <label class="checkbox"><input type="checkbox" name="subscription" id="subscription"><i></i>Nhận tin nhắn thông báo</label>
+            <label class="checkbox"><input type="checkbox" name="terms" id="terms"><i></i>Đồng ý điều khoản sử dụng</label>
+          </section>
+        </fieldset>
+        <footer>
+          <button type="submit" class="button">Đồng ý</button>
+        </footer>
+      </form>
+    </div>
+
+  </div>
+
+</div><!-- end content area -->
+
+
+<div class="clearfix margin_top7"></div>
