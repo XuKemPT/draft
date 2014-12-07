@@ -239,7 +239,7 @@ h2.section_title_white {
 	text-transform: uppercase;
 	padding-bottom: 20px;
 	font-weight: 200;
-	background: url(../assets/title-hline.png) no-repeat center bottom;
+	background: url(assets/title-hline.png) no-repeat center bottom;
 	margin-bottom: 70px;
 }
 h2.section_title_white strong {

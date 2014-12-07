@@ -1,4 +1,12 @@
 Rails.application.routes.draw do
+  get 'images/index'
+
+  get 'images/new'
+
+  get 'images/create'
+
+  get 'images/destroy'
+
   root 'home#index'
 
   get 'home/index'
@@ -9,6 +17,7 @@ Rails.application.routes.draw do
   get 'home/news'
   get 'home/news_post'
   get 'home/astroTg'
+  get 'home/astroVn'
   get 'home/question'
   get 'home/discovery'
   get 'home/knowledge'
@@ -16,6 +25,8 @@ Rails.application.routes.draw do
   get 'users/login'
   get 'users/register'
 
+  resources :images, only:[:index, :new, :create, :destroy]
+  get "images/index"
   devise_for :admin_users, ActiveAdmin::Devise.config
   ActiveAdmin.routes(self)
 
